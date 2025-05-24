@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grand Opening – Bean & Brew Café</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf5;
+      color: #3a2c27;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #8b5e3c;
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #fff;
+      border-bottom: 2px solid #8b5e3c;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 1rem;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #8b5e3c;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem;
+    }
+
+    nav a:hover {
+      background-color: #fceee1;
+      border-radius: 5px;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 5rem 1.5rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .btn {
+      background-color: #8b5e3c;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      margin-top: 1.5rem;
+      display: inline-block;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h3 {
+      text-align: center;
+      color: #8b5e3c;
+      margin-bottom: 1rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background-color: #fef6f0;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .contact {
+      text-align: center;
+      background-color: #fff4ea;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #8b5e3c;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bean & Brew Café</h1>
+    <p>Join us for our Grand Opening!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Now Brewing in Your Neighborhood</h2>
+    <p>Stop by for handcrafted coffee, pastries, and cozy vibes.</p>
+    <a href="#visit" class="btn">See Location</a>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Bean & Brew</h3>
+    <p>We’re excited to open our doors and serve the community with artisan coffee, fresh pastries, and a cozy café experience. Our beans are ethically sourced, our baristas are passionate, and our vibe is always welcoming.</p>
+  </section>
+
+  <section class="section" id="menu">
+    <h3>Opening Menu Highlights</h3>
+    <div class="features">
+      <div class="card">
+        <h4>Signature Coffee</h4>
+        <p>Freshly brewed with beans from Brazil & Ethiopia.</p>
+      </div>
+      <div class="card">
+        <h4>House Lattes</h4>
+        <p>Vanilla, Mocha, Chai – all made with love and milk options.</p>
+      </div>
+      <div class="card">
+        <h4>Bakery Delights</h4>
+        <p>From croissants to carrot cake, always baked fresh.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="visit">
+    <h3>Visit Us</h3>
+    <div class="contact">
+      <p><strong>Grand Opening:</strong> June 1st, 2025</p>
+      <p><strong>Location:</strong> 123 Roast Street, Brewtown</p>
+      <p><strong>Email:</strong> hello@beanbrewcafe.com</p>
+      <p><strong>Phone:</strong> +1 555 123 4567</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Bean & Brew Café. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
